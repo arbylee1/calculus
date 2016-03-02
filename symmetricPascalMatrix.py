@@ -1,4 +1,4 @@
-__author__ = 'Orange Blossom'
+_author_ = 'Albert'
 import numpy as np
 import matrixMultiplication as mm
 import qr_fact_givens as qfg
@@ -12,7 +12,7 @@ def generate_pascal(size):
     for row in range(2, size):
         pascalMatrix[row][0] = 1
         pascalMatrix[0][row] = 1
-        for col in range(1, size - 1):
+        for col in 	range(1, size - 1):
             pascalMatrix[row-col][col] = pascalMatrix[row-col][col-1] + pascalMatrix[row-col-1][col]
 
     for col in range(1, size):

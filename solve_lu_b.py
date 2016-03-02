@@ -1,3 +1,5 @@
+_author_ = 'Albert'
+
 import numpy as np
 import matrixMultiplication as mm
 import symmetricPascalMatrix as lu

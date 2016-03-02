@@ -1,3 +1,5 @@
+_author_ = 'Albert'
+
 # Gauss-Seidel Iterative Method
 # function takes in a 3x1 vector, tolerance parameter, and positive int M giving the max iterations
 # returns approx solution x and number of iterations needed to obtain approx

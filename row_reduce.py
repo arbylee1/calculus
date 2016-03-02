@@ -1,4 +1,4 @@
-__author__ = 'Orange Blossom'
+_author_ = 'Albert'
 import numpy as np
 
 def l_reduce(l, c):

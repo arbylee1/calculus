@@ -1,3 +1,5 @@
+_author_ = 'Amy'
+
 import numpy as np
 
 def matrixMult(matrixA, matrixB):

@@ -1,3 +1,5 @@
+_author_ = 'Albert'
+
 # power method to approximate en e'value and e'vecor for nxn
 # inputs should take in A, initial guess v, tolerance, max num iterate before quitting, N
 # outputs are e'value and e'vector, number of iterations -> if N times then return none

@@ -1,3 +1,5 @@
+_author_ = 'Albert'
+
 # QR-factorization of nxn matrix that uses Givens Rotations
 # Return matrices L and U, and the error ||QR-A||
 
