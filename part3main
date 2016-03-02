@@ -1,0 +1,32 @@
+import random as rand
+import numpy as np
+import power_method as pm
+import csv
+
+
+with open('Part 3 Eigenvalues.csv', 'w') as p2file:
+    writer = csv.writer(p2file, delimiter=',', lineterminator = '\n')
+    number = 1000
+    writer.writerow(["trace","determinant","max eigenvalue","iterations","min eigenvalue","iterations"])
+    print("Start Power Method")
+    for i in range(0, number):
+        a = rand.uniform(-2.0, 2.0)
+        b = rand.uniform(-2.0, 2.0)
+        c = rand.uniform(-2.0, 2.0)
+        d = rand.uniform(-2.0, 2.0)
+        if (a == 0.0 or d == 0.0) and (b == 0.0 or c == 0.0):
+            number += 1
+        else:
+            A = np.array([[a,b], [c,d]], float)
+            max_eig = pm.big_eigen(A)
+            min_eig = pm.small_eigen(A)
+            if max_eig is None:
+                if min_eig is None:
+                    writer.writerow([(a + d), pm.determinant(A), "does not converge", "", "does not converge",""])
+                else:
+                    writer.writerow([(a + d), pm.determinant(A), "does not converge", "",min_eig[0], min_eig[2]])
+            else:
+                if min_eig is None:
+                    writer.writerow([(a + d), pm.determinant(A), max_eig[0], max_eig[2], "does not converge",""])
+                else:
+                    writer.writerow([(a + d), pm.determinant(A), max_eig[0], max_eig[2], min_eig[0], min_eig[2]])
