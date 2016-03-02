@@ -1,5 +1,5 @@
 _author_ = 'Albert'
-
+#solves a system of linear equations in augmented form [A|b] using givens QR decomposition. Returns [solution vector, error] as a 2-tuple.
 import numpy as np
 import matrixMultiplication as mm
 import qr_fact_givens as qr

@@ -1,4 +1,3 @@
-_author_ = 'Albert'
 import numpy as np
 
 def l_reduce(l, c):

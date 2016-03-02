@@ -2,9 +2,8 @@ _author_ = 'Albert'
 
 # Gauss-Seidel Iterative Method
 # function takes in a 3x1 vector, tolerance parameter, and positive int M giving the max iterations
-# returns approx solution x and number of iterations needed to obtain approx
-# Random generate initial vectors
-
+# @return [approx solution x, number of iterations needed] as a 2-tuple. Or, if the solution did not converge. None.
+# 
 import numpy as np
 import matrixMultiplication as mm
 import math as math

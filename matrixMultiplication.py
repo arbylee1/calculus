@@ -1,5 +1,6 @@
-_author_ = 'Amy'
+_author_ = 'Amy'	
 
+#library for calculating various matrix products between vectors and matrices.
 import numpy as np
 
 def matrixMult(matrixA, matrixB):

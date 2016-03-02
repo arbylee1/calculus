@@ -4,6 +4,11 @@ import matrixMultiplication as mm
 import qr_fact_givens as qfg
 import qr_fact_househ as qfh
 
+#generates a pascal matrix of certain size
+#eg pascal(3)
+# 1 2 3
+# 2 4 6
+# 3 6 10
 def generate_pascal(size):
     pascalMatrix = np.zeros([size,size], float)
     pascalMatrix[0][0] = 1
@@ -27,6 +32,7 @@ def generate_pascal_b(size):
         b[row] = 1.0/(row + 1.0)
     return b
 
+#decomposes a matrix [A] into matrices [L] & [U] by row reduction.
 def lu_fact ( u ):
     v = np.copy(u)
     length = v.shape[0]
